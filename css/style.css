@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+/* utility classes */
+.pt-4 {
+  padding-top: 60px;
+}
+
 body {
   font-family: 'Familjen Grotesk', sans-serif;
   background: #000;
@@ -114,32 +119,70 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both; // Stop from showing at start
+  animation-fill-mode: both; /* Stop from showing at start */
 }
 
 .section-inner a {
   animation: fadeInUp 0.5s ease-in-out 0.4s;
-  animation-fill-mode: both; // Stop from showing at start
+  animation-fill-mode: both; /* Stop from showing at start */
+}
+
+/* call to action section */
+.call-to-action {
+  min-height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.action-inner {
+  max-width: 976xp;
+  text-align: center;
+  /* padding: 40px; */
+}
+
+.action-inner h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.action-inner h3 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both; /* Stop from showing at start */
 }
 
 /* Background images */
 .section-a {
-  background-image: url('../img/section-a.webp');
+  background-image: url('../img/industry-a.jpg');
 }
 .section-b {
-  background-image: url('../img/section-b.webp');
+  background-image: url('../img/yellow-pvc.jpg');
 }
 .section-c {
-  background-image: url('../img/section-c.webp');
+  background-image: url('../img/industry_pipes.jpg');
 }
 .section-d {
-  background-image: url('../img/section-d.webp');
+  background-image: url('../img/harness.jpg');
 }
 .section-e {
   background-image: url('../img/section-e.webp');
 }
 .section-f {
   background-image: url('../img/section-f.webp');
+}
+.action-a {
+  background-image: url('../img/pipes-guages.jpg');
 }
 
 .btn {
@@ -338,11 +381,11 @@ footer ul li a:hover {
 
 /* Inner Pages */
 .bg-falcon-9 {
-  background-image: url('../img/falcon-9.webp');
+  background-image: url('../img/geomembranes.jpg');
 }
 
 .bg-falcon-heavy {
-  background-image: url('../img/falcon-heavy.webp');
+  background-image: url('../img/geomembranes.jpg');
 }
 
 .bg-dragon {
@@ -393,6 +436,11 @@ footer ul li a:hover {
 .stats div h4 {
   font-size: 24px;
   font-weight: 300;
+}
+
+/* cards */
+.card-image img {
+  width: 300px;
 }
 
 /* Animations */
